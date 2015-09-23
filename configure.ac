@@ -166,10 +166,10 @@ AC_CHECK_READLINE
 CFLAGS="$CFLAGS -Wall -pedantic -Wextra"
 
 # Defines and C flags
-CFLAGS="$CFLAGS -std=c99"
+CFLAGS="$CFLAGS -std=gnu99 -lrt"
 
 # Workarounds for libusb in c99
-CFLAGS="$CFLAGS -Du_int8_t=uint8_t -Du_int16_t=uint16_t"
+#CFLAGS="$CFLAGS -Du_int8_t=uint8_t -Du_int16_t=uint16_t"
 
 AC_CONFIG_FILES([
 		Doxyfile
